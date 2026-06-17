@@ -1,0 +1,24 @@
+        :root {
+            --primary-bg: #F3F4F6; /* Grey background  */
+            --primary-text: #1F2937; /* Dark text */
+            --secondary-text: #6B7280; /* Lighter text for titles/subtitles */
+            --accent-green: #22C55E; /* 'INTERVIEW' and stats green */
+            --accent-red: #EF4444; /* 'REJECTED' and stats red */
+            --active-tab-bg: #3B82F6; /* Active 'All' tab blue */
+            --inactive-btn-bg: #FFFFFF; /* White for inactive buttons */
+            --btn-border: #E5E7EB; /* Default button border */
+        }
+
+        
+        .dashboard-container {
+            border: 2px dashed #60A5FA; 
+            border-radius: 12px;
+            padding: 1rem;
+            margin-top: 2rem;
+            background-color: white;
+        }
+        .text-stats-huge {
+            font-size: 4rem; 
+            font-weight: 700;
+        }
+   
