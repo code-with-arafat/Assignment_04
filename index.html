@@ -9,6 +9,42 @@
 </head>
 <body class="bg-[#F3F4F6] font-sans p-8">
 
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <h1 class="text-3xl font-bold text-primary-text mb-6">Job Application Tracker</h1>
+
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <p class="text-sm font-medium text-secondary-text mb-1">Total</p>
+                <p id="total-stat" class="text-stats-huge text-primary-text leading-tight">8</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <p class="text-sm font-medium text-secondary-text mb-1">Interview</p>
+                <p id="interview-stat" class="text-stats-huge text-[#16A34A] leading-tight">0</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow text-center">
+                <p class="text-sm font-medium text-secondary-text mb-1">Rejected</p>
+                <p id="rejected-stat" class="text-stats-huge text-[#EF4444] leading-tight">0</p>
+            </div>
+        </div>
+
+        <div class="dashboard-container">
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-semibold text-primary-text">Available Jobs</h2>
+                <span id="section-count" class="text-sm text-secondary-text">8 jobs</span>
+            </div>
+
+            <div class="flex items-center space-x-1.5 border border-gray-200 rounded-lg w-fit p-1 bg-white mb-6">
+                <button id="tab-all" onclick="switchTab('all')" class="bg-[#3B82F6] text-white text-xs px-5 py-1.5 rounded-md font-semibold transition">All</button>
+                <button id="tab-interview" onclick="switchTab('interview')" class="text-secondary-text text-xs px-5 py-1.5 rounded-md hover:bg-gray-100 font-medium border border-gray-200 transition">Interview</button>
+                <button id="tab-rejected" onclick="switchTab('rejected')" class="text-secondary-text text-xs px-5 py-1.5 rounded-md hover:bg-gray-100 font-medium border border-gray-200 transition">Rejected</button>
+            </div>
+
+            <div id="job-cards-container" class="space-y-4">
+                </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
